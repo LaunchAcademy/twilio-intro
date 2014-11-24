@@ -1,0 +1,7 @@
+<h1>Conversation with <%= @sender_number %></h1>
+
+<% @messages.each do |message| %>
+  <h3>From <%= message.from %> to <%= message.to %></h3>
+  <p><%= message.date_sent %></p>
+  <p><%= message.body %></p>
+<% end %>

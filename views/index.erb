@@ -1,0 +1,11 @@
+<h1>Messages</h1>
+
+<% @messages.each do |message| %>
+  <h3>
+    From
+    <a href="/conversations/<%= message.from %>"><%= message.from %></a>
+    to <%= message.to %>
+  </h3>
+
+  <p><%= message.body %></p>
+<% end %>
